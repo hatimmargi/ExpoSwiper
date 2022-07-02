@@ -14,29 +14,34 @@
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide slide1"><h1>Collage Art</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+        <div class="swiper-slide slide2"><h1>Night Traveler</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+        <div class="swiper-slide  slide3"><h1>Pyramids At Night</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
         ...
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
     
       <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
   </body>
 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.js" integrity="sha512-tSZkQgeguyq3aexw0amX7YSd4h6BFSInX8nSgVeGq9ohMr4KKjGqh9zgRMJ0ZE37IhA9FzSA7LWDWuUVenrJmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+
   <script>
     const swiper = new Swiper('.swiper', {
   effect: 'cube',
   cubeEffect: {
     slideShadows: false,
+    shadow: false,
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
 });
   </script>
 </html>
