@@ -4,10 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.css" integrity="sha512-LTz09eiSkjtMayQgsyCcxuA2POUuvwdJoejrNLLIj5tulySAEAFgRHXW5JO4/qW36nurH8iApZ4SMj9E2rRHtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="main.css" />
     <title>Expo2020 - Hatim Margi</title>
   </head>
   <body>
-
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
   </body>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.js" integrity="sha512-tSZkQgeguyq3aexw0amX7YSd4h6BFSInX8nSgVeGq9ohMr4KKjGqh9zgRMJ0ZE37IhA9FzSA7LWDWuUVenrJmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script>
+    const swiper = new Swiper('.swiper', {
+  effect: 'cube',
+  cubeEffect: {
+    slideShadows: false,
+  },
+});
+  </script>
 </html>
