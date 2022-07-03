@@ -8,15 +8,23 @@
 
 body {
   position: relative;
-  background-color: #242424;
+  background-color: #070707;
   color: white;
   font-family: 'Poppins', sans-serif;
+  cursor: -webkit-grab;
+  cursor: grab;
+  margin: auto;
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden;
 }
 
 .swiper-button-prev {
   position: absolute;
   left: 5%;
-  top: 90%;
+  top: 88%;
   color: white;
   outline: none;
 }
@@ -24,14 +32,14 @@ body {
 .swiper-button-next {
   position: absolute;
   right: 5%;
-  top: 90%;
+  top: 88%;
   color: white;
   outline: none;
 }
 
 .swiper-wrapper {
+  position: relative;
   height: 100vh;
-  width: 100%;
 }
 
 .swiper-slide {
@@ -39,45 +47,76 @@ body {
   display: grid;
   place-content: center;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100%;
   position: relative;
 }
 
-.swiper-slide h1 {
+.swiper-slide .slide-content {
   position: absolute;
-  top: 70%;
-  left: 20%;
+  bottom: 17%;
+  left: 10%;
+}
+
+.swiper-slide h1 {
+  margin-bottom: 0.5em;
+}
+
+.swiper-slide h1::before {
+  content: '';
+  background-color: #00f5cc;
+  width: 150px;
+  height: 10px;
+  position: absolute;
+  top: -10%;
+  left: 0%;
+  z-index: -1;
 }
 
 .swiper-slide p {
-  position: absolute;
-  top: 80%;
-  left: 20%;
-  max-width: 400px;
+  max-width: 350px;
+  margin-bottom: 1.2em;
+}
+
+.swiper-slide span {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00f5cc;
 }
 
 .slide1 {
-  background: url(./images/collageArt.png), rgba(36, 36, 36, 0.4);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(black)), url(./images/collageArt.png);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 100%), url(./images/collageArt.png);
   background-size: cover;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: center center;
+  -webkit-box-shadow: 0 0 200px rgba(0, 0, 0, 0.85) inset;
+          box-shadow: 0 0 200px rgba(0, 0, 0, 0.85) inset;
 }
 
 .slide2 {
-  background: url(./images/NightTraveler.jpg), rgba(36, 36, 36, 0.4);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(black)), url(./images/NightTraveler.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 100%), url(./images/NightTraveler.jpg);
   background-size: cover;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: center center;
+  -webkit-box-shadow: 0 0 200px rgba(0, 0, 0, 0.85) inset;
+          box-shadow: 0 0 200px rgba(0, 0, 0, 0.85) inset;
 }
 
 .slide3 {
-  background: url(./images/PyramidsAtNight.png), rgba(36, 36, 36, 0.4);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(black)), url(./images/PyramidsAtNight.png);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 100%), url(./images/PyramidsAtNight.png);
   background-size: cover;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: center center;
+  -webkit-box-shadow: 0 0 200px rgba(0, 0, 0, 0.85) inset;
+          box-shadow: 0 0 200px rgba(0, 0, 0, 0.85) inset;
 }
 /*# sourceMappingURL=main.css.map */

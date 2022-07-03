@@ -8,67 +8,111 @@
 
 body {
   position: relative;
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(7, 7, 7);
   color: white;
   font-family: 'Poppins', sans-serif;
+  cursor: grab;
+  margin: auto;
+}
+.container {
+  height: 100vh;
+  overflow: hidden;
 }
 .swiper-button-prev {
   position: absolute;
   left: 5%;
-  top: 90%;
+  top: 88%;
   color: white;
   outline: none;
 }
 .swiper-button-next {
   position: absolute;
   right: 5%;
-  top: 90%;
+  top: 88%;
   color: white;
   outline: none;
 }
 .swiper-wrapper {
+  position: relative;
   height: 100vh;
-  width: 100%;
 }
 .swiper-slide {
   display: grid;
   place-content: center;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100%;
   position: relative;
-  h1 {
+
+  .slide-content {
     position: absolute;
-    top: 70%;
-    left: 20%;
+    bottom: 17%;
+    left: 10%;
+  }
+  h1 {
+    margin-bottom: 0.5em;
+    &::before {
+      content: '';
+      background-color: rgb(0, 245, 204);
+      width: 150px;
+      height: 10px;
+      position: absolute;
+      top: -10%;
+      left: 0%;
+      z-index: -1;
+    }
   }
   p {
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    max-width: 400px;
+    max-width: 350px;
+    margin-bottom: 1.2em;
+  }
+  span {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(0, 245, 204);
   }
 }
 .slide1 {
-  background: url(./images/collageArt.png), rgba(36, 36, 36, 0.4);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(./images/collageArt.png);
   background-size: cover;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: center center;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.85) inset;
 }
 .slide2 {
-  background: url(./images/NightTraveler.jpg), rgba(36, 36, 36, 0.4);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(./images/NightTraveler.jpg);
   background-size: cover;
   background-blend-mode: multiply;
 
   background-repeat: no-repeat;
   background-position: center center;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.85) inset;
 }
 .slide3 {
-  background: url(./images/PyramidsAtNight.png), rgba(36, 36, 36, 0.4);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(./images/PyramidsAtNight.png);
   background-size: cover;
   background-blend-mode: multiply;
 
   background-repeat: no-repeat;
   background-position: center center;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.85) inset;
 }
